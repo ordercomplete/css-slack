@@ -1,0 +1,105 @@
+<div class="page">
+
+  <div class="page_content">
+
+    <header class="page_block">
+      <div class="header row g-0">
+        <div class="col-3">
+          {{>logo}}
+        </div>
+        <nav class="header_nav col-9">
+          <div class="header_nav_right">
+            {{>nav-template list=header}}
+          </div>
+        </nav>
+      </div>
+      <div class="divider"></div>
+    </header>
+
+    <section class="page_block">
+      <div class="hero">
+        {{#with hero}}
+        {{>hero title=title text=text button=button}}
+        {{/with}}
+      </div>
+    </section>
+
+    <section class="page_block">
+      <div class="row g-4">
+        {{#each preview}}
+        <div class="col-6">
+          {{>cardPreview data=this}}
+        </div>
+        {{/each}}
+      </div>
+    </section>
+
+    <main class="page_block">
+
+      <div class="main">
+
+        <div class="list_header">
+          <div class="row">
+            <div class="col-6">
+              <h2 class="list_title">List of posts</h2>
+            </div>
+            <div class="col-6">
+              <div class="category_button_right">
+                {{#each categories}}
+                <button class="category_button">{{text}}</button>
+                {{/each}}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-0">
+
+          <div class="col-7">
+            <div class="list">
+              {{>cardPost data=news}}
+
+            </div>
+          </div>
+          <div class="col-5">
+            <aside class="list_aside">
+              <div class="about">
+                <h4 class="about_title">About</h4>
+                <p class="about_text">{{about}}</p>
+              </div>
+
+              {{>linkList data=archive title="Archives"}}
+
+              {{>linkList data=social title="Social"}}
+
+            </aside>
+          </div>
+
+        </div>
+
+      </div>
+
+    </main>
+
+
+
+
+    <footer class="page_block">
+      <div class="divider"></div>
+      <div class="row footer">
+        <div class="col-3">
+          {{>logo}}
+          <span class="footer_copyright">Copyright 2023-2024</span>
+        </div>
+        {{#each footer}}
+        <div class="col-3">
+          <span class="footer_title">{{title}}</span>
+          <span class="footer_links">{{>nav-template list=links isVertical=true}}</span>
+        </div>
+        {{/each}}
+      </div>
+    </footer>
+
+  </div>
+
+</div>
