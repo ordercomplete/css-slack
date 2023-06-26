@@ -8,9 +8,9 @@
         <nav class="header_nav col-9">
           <div class="header_nav_right">
 
-            {{!-- {{>navtemplate1 list=header isVertical=true}} --}}
+            {{!-- {{>nav-template-1 list=header isVertical=true}} --}}
 
-            {{>navtemplate1 list=header}}
+            {{>nav-template list=header}}
 
           </div>
         </nav>
@@ -43,7 +43,7 @@
         {{#each footer}}
         <div class="col-3">
           <span class="footer_title">{{title}}</span>
-          <span class="footer_links">{{>navtemplate1 list=links isVertical=true}}</span>
+          <span class="footer_links">{{>nav-template list=links isVertical=true}}</span>
         </div>
         {{/each}}
 
