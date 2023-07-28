@@ -372,9 +372,7 @@
   /* grid-template-rows: repeat(3, min-content); */
   grid-template-rows: repeat(3, 1fr);
 
-  /* grid-area — це також властивість, яка дозволяє вказати
-розташування елемента на сітці, є скороченням для
-властивостей grid-column та grid-row */
+  /* grid-area — це також властивість, яка дозволяє вказати розташування елемента на сітці, є скороченням для властивостей grid-column та grid-row */
 
   /* grid-template-areas: 'messages messages form' 'advantages advantages advantages'; */
 
