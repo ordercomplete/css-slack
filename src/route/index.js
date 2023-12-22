@@ -10,16 +10,16 @@ const router = express.Router()
 // router.get Створює нам один ентпоїнт
 
 //           ↙ тут вводимо шлях (PATH) до сторінки
-router.get('/template-8', function (req, res) {
+router.get('/template-3-1', function (req, res) {
   // res.render генерує нам HTML сторінку
 
   //            ↙ cюди вводимо назву файлу з сontainer
-  res.render('template-8', {
+  res.render('template-3-1', {
     page: {
-      title: 'template-8',
+      title: 'template-3-1',
     },
 
-    layout: `template-8`,
+    layout: `template-3-1`,
 
     header: [
       {
