@@ -1,4 +1,10 @@
 <body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function()
+    { document.querySelectorAll('.feat_card').forEach(card
+    => { if (card.querySelector('.feat_card_description')) {
+    card.style.gap = 'var(--spasing-2)'; } }); });
+  </script>
 
   <div class='page'>
     <section class='page_section'>
@@ -73,12 +79,13 @@
 
     <section class='page_section page_section_light'>
       <div class='page_content features_section'>
-        <h2 class='features_title'>Work more easily with
-          everyone</h2>
-        <p class='features_description'>Stay on the same
-          page and make decisions faster by bringing all of
-          your work communication into one place.</p>
-
+        <div class='features_text'>
+          <h2 class='features_title'>Work more easily with
+            everyone</h2>
+          <p class='features_description'>Stay on the same
+            page and make decisions faster by bringing all
+            of your work communication into one place.</p>
+        </div>
         <div class='features_grid_4'>
 
           <div class='feat_card'>
@@ -168,6 +175,80 @@
             <strong
               class='feat_card_title'
             >Accessibility</strong>
+            <a
+              href='#'
+              class='icon icon_arrow click feat_link'
+            ></a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class='page_section page_section_light'>
+      <div class='page_content features_section2'>
+        <div class='features_text2'>
+          <h2 class='features_title'>What you need, when you
+            need it</h2>
+          <p class='features_description'>Spend less time
+            shuffling tabs with a comprehensive message
+            archive and all your work tools at your
+            fingertips.</p>
+        </div>
+
+        <div class='features_grid_3'>
+
+          <div class='feat_card'>
+            <span
+              class='icon feat_icon'
+              style="background-image: url('/svg/feature2/Apps.svg')"
+            ></span>
+            <strong class='feat_card_title'>Apps and
+              Integrations</strong>
+            <p class='feat_card_description'>Streamline work
+              by connecting Slack with other services like
+              Google Drive, Office 365 and over 2,200 more.</p>
+            <a
+              href='#'
+              class='icon icon_arrow click feat_link'
+            ></a>
+          </div>
+
+          <div class='feat_card'>
+            <span
+              class='icon feat_icon'
+              style="background-image: url('/svg/feature2/Workflow.svg')"
+            ></span>
+            <strong class='feat_card_title'>Workflow Builder</strong>
+            <p class='feat_card_description'>Automate
+              routine actions and communication, so you can
+              get back to the kind of work only humans can
+              do.</p>
+            <a
+              href='#'
+              class='icon icon_arrow click feat_link'
+            ></a>
+          </div>
+
+          <div class='feat_card'>
+            <span
+              class='icon feat_icon'
+              style="background-image: url('/svg/feature2/Search.svg')"
+            ></span>
+            <strong class='feat_card_title'>Search</strong>
+            <a
+              href='#'
+              class='icon icon_arrow click feat_link'
+            ></a>
+          </div>
+
+          <div class='feat_card'>
+
+            <span
+              class='icon feat_icon'
+              style="background-image: url('/svg/feature2/File_sharing.svg')"
+            ></span>
+            <strong class='feat_card_title'>File sharing</strong>
             <a
               href='#'
               class='icon icon_arrow click feat_link'
